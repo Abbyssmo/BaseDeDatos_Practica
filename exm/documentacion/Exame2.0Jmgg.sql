@@ -34,7 +34,7 @@ DEFAULT CHARACTER SET = utf8;
 
 CREATE TABLE IF NOT EXISTS `examen2.0`.`Edad` (
   `idEdad` INT(11) NOT NULL AUTO_INCREMENT,
-  `Edad` INT(11) NOT NULL,
+  `Edad` Date  NOT NULL,
   `Empleados_ID_Empleado` INT(11) NOT NULL,
   PRIMARY KEY (`idEdad`, `Empleados_ID_Empleado`),
   INDEX `fk_Edad_Empleados1_idx` (`Empleados_ID_Empleado` ASC) VISIBLE,
